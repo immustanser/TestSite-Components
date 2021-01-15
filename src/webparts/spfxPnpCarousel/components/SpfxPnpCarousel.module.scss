@@ -1,12 +1,12 @@
 @import '~office-ui-fabric-react/dist/sass/References.scss';
 
-:global {
-  #workbenchPageContent,
-  .CanvasComponent.LCS .CanvasZone {
-    max-width: 100% !important;
-  }
+// :global {
+//   #workbenchPageContent,
+//   .CanvasComponent.LCS .CanvasZone {
+//     max-width: 100% !important;
+//   }
 
-}
+// }
 
 
 .carouselImageContent {
@@ -43,6 +43,7 @@
     max-width: 550px;
     width: 100%;
     font-size: 18px;
+    font-weight: 300;
     color: '#505050';
 
     h2{
@@ -73,12 +74,11 @@
     line-height: 1.5;
     text-transform: uppercase;
     font-family: 'Oswald', 'Open Sans', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     border: 1px solid  #e3ad21;
     border-radius: 50px;
     left: calc(42% - 2px);
     
-
 
     a{
       color: #e3ad21;
@@ -91,16 +91,6 @@
       left: 0;
       top: 0;
       z-index: -1;
-    }
-
-    // a span .btnSpanForHover{
-    //   width: 50px;
-    //   height: 20px;
-    // }
-
-    a:hover a:visited{
-      color: #fff;
-      transition: 8s;
     }
 
   }

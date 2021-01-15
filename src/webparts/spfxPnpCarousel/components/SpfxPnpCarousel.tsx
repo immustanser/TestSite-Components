@@ -63,8 +63,6 @@ export default class SpfxPnpCarousel extends React.Component<ISpfxPnpCarouselPro
     .filter('Attachments eq 1')
     .get();
 
-    debugger;
-
 
     url=this.props.siteurl;
 
@@ -115,6 +113,7 @@ export default class SpfxPnpCarousel extends React.Component<ISpfxPnpCarouselPro
               <small>Alphabold</small>
               <br></br>
               {title}
+              <span></span>
               </h2>
             <p>{description}</p>
           </div>
