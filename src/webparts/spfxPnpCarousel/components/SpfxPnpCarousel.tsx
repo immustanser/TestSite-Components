@@ -103,7 +103,7 @@ export default class SpfxPnpCarousel extends React.Component<ISpfxPnpCarouselPro
 
 
       banner.push(<div key={i} >
-        <div>
+        <div className="container">
         
           <a href="#">
             <img className={[styles.imageCarousal].join(' ')} src={url_final} alt="banner" />
