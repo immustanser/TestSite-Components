@@ -1,5 +1,19 @@
 @import '~office-ui-fabric-react/dist/sass/References.scss';
 
+
+@media (max-width: 1199.98px){
+  .titleDescriptionContainer {
+    max-width: inherit;
+    left: 100px;
+    right: 100px;
+    width: 100%;
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+  }
+  
+}
+
 :global {
   #workbenchPageContent,
   .CanvasComponent.LCS .CanvasZone {
@@ -25,6 +39,7 @@
 
 
 .spfxPnpCarousel {
+  
   .container {
     max-width: 700px;
     margin: 0px auto;
