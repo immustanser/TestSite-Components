@@ -116,14 +116,20 @@ export default class SpfxPnpCarousel extends React.Component<ISpfxPnpCarouselPro
               <span></span>
               </h2>
             <p>{description}</p>
+
+            <br></br>
+            <br></br>
+            <br></br>
+
+            <div className={styles.bottomTitleLinkContainer}>
+              <a href="https://ownix.sharepoint.com/WebpartsTest/Lists/bannerlist/EditForm.aspx?ID=3">
+                <button className={styles.bottomTitleLinkButton}>
+                  {title}
+                </button>
+              </a>
+            </div>
           </div>
-          <div className={styles.bottomTitleLinkContainer}>
-            <a href="https://ownix.sharepoint.com/WebpartsTest/Lists/bannerlist/EditForm.aspx?ID=3">
-              <button className={styles.bottomTitleLinkButton}>
-                {title}
-              </button>
-            </a>
-          </div>
+          
         </div>
       </div>);
 
