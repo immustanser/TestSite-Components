@@ -1,12 +1,12 @@
 @import '~office-ui-fabric-react/dist/sass/References.scss';
 
-// :global {
-//   #workbenchPageContent,
-//   .CanvasComponent.LCS .CanvasZone {
-//     max-width: 100% !important;
-//   }
+:global {
+  #workbenchPageContent,
+  .CanvasComponent.LCS .CanvasZone {
+    max-width: 100% !important;
+  }
 
-// }
+}
 
 
 .carouselImageContent {
@@ -75,31 +75,29 @@
 
     position: absolute;
     margin-top: 400px;
-    display: inline-block;
-    background-color: transparent;
-    padding: 10px 35px;
-    font-size: 24px;
-    line-height: 1.5;
-    text-transform: uppercase;
-    font-family: 'Oswald', 'Open Sans', sans-serif;
-    font-weight: 400;
-    border: 1px solid  #e3ad21;
-    border-radius: 50px;
     left: calc(42% - 2px);
-    
 
-    a{
+    .bottomTitleLinkButton{
+      display: inline-block;
+      background-color: transparent;
+      padding: 10px 35px;
+      font-size: 24px;
+      line-height: 1.5;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-family: 'Oswald', 'Open Sans', sans-serif;
+      font-weight: 400;
+      border: 1px solid  #e3ad21;
+      border-radius: 50px;
       color: #e3ad21;
-      text-decoration: none;
+    
     }
 
-    span{
+    .bottomTitleLinkButton:hover{
       background-color: #e3ad21;
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: -1;
+      color: #fff;
     }
+
 
   }
 
