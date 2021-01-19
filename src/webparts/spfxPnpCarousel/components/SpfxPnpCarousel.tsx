@@ -23,7 +23,7 @@ export default class SpfxPnpCarousel extends React.Component<ISpfxPnpCarouselPro
 
     super(props);
 
-    SPComponentLoader.loadCss("https://alphabold.sharepoint.com//Styles/css/top_ribbon_appear.css");
+    SPComponentLoader.loadCss("https://ownix.sharepoint.com/devrepo/Styles/css/top_ribbon_appear.css");
     
 
     sp.setup({
@@ -62,6 +62,8 @@ export default class SpfxPnpCarousel extends React.Component<ISpfxPnpCarouselPro
     .expand("AttachmentFiles")
     .filter('Attachments eq 1')
     .get();
+
+    debugger;
 
 
     url=this.props.siteurl;
@@ -103,33 +105,24 @@ export default class SpfxPnpCarousel extends React.Component<ISpfxPnpCarouselPro
 
 
       banner.push(<div key={i} >
-        <div className="container">
+        <div>
         
           <a href="#">
-            <img className={[styles.imageCarousal].join(' ')} src={url_final} alt="banner" />
+            <img style={{ width: '100%', height: '400px' }} src={url_final} alt="banner" className={[styles['rounded-top'], styles['img-responsive']].join(' ')} />
           </a>
-          <div className={styles.titleDescriptionContainer}>
-            <h2>
-              <small>Alphabold</small>
-              <br></br>
-              {title}
-              <span></span>
-              </h2>
+          <div style={{ background: 'rgba(0, 0, 0, 48%)', overflow: 'hidden', fontSize: 16, top: '100px', textAlign: 'left', width: '100%', height: '200px', position: 'absolute', color: '#ffffff', padding: '25px' }}>
+            <h2 style={{ fontSize: 24, fontWeight:500, color: '#fff' }}>Alphabold</h2>
+            <h2 style={{ fontSize: 36, textTransform: 'uppercase', color: '#e3ad21' }}>{title}</h2>
             <p>{description}</p>
+          </div>
 
-            <br></br>
-            <br></br>
-            <br></br>
-
-            <div className={styles.bottomTitleLinkContainer}>
+          <div className={styles.bottomTitleLinkContainer}>
               <a href="https://ownix.sharepoint.com/WebpartsTest/Lists/bannerlist/EditForm.aspx?ID=3">
                 <button className={styles.bottomTitleLinkButton}>
                   {title}
                 </button>
               </a>
             </div>
-          </div>
-          
         </div>
       </div>);
 
