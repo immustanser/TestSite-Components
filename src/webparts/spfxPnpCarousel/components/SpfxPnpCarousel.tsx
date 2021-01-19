@@ -76,15 +76,15 @@ export default class SpfxPnpCarousel extends React.Component<ISpfxPnpCarouselPro
       var id=items[j].ID;
       var title = items[j].Title;
        var description=items[j].Description;
-      if(items[j].Description.length>200)
+      if(items[j].Description.length>300)
       {
-         console.log("Inside the description greater than 200:--",items[j].Description);  
-         description=items[j].Description.substring(0,200) + "....";
+         console.log("Inside the description greater than 300:--",items[j].Description);  
+         description=items[j].Description.substring(0,300) + "....";
       }
   
       if(items[j].Description.length<200)
       {
-       console.log("Inside the description less than 200:--",items[j].Description);  
+       console.log("Inside the description less than 300:--",items[j].Description);  
   
            description=items[j].Description;
       }
@@ -110,7 +110,7 @@ export default class SpfxPnpCarousel extends React.Component<ISpfxPnpCarouselPro
           </a>
           <div className={styles.titleDescriptionContainer}>
             <h2>
-              <small>Alphabold</small>
+              <small>ALPHABOLD</small>
               <br></br>
               {title}
               <span></span>
@@ -123,7 +123,7 @@ export default class SpfxPnpCarousel extends React.Component<ISpfxPnpCarouselPro
             <br></br>
 
             <div className={styles.bottomTitleLinkContainer}>
-              <a href="https://ownix.sharepoint.com/WebpartsTest/Lists/bannerlist/EditForm.aspx?ID=3">
+              <a href="https://alphabold.sharepoint.com/WebpartsTest/Lists/bannerlist/EditForm.aspx?ID=3">
                 <button className={styles.bottomTitleLinkButton}>
                   {title}
                 </button>
@@ -231,9 +231,13 @@ export default class SpfxPnpCarousel extends React.Component<ISpfxPnpCarouselPro
     return (
       <div className={styles.spfxPnpCarousel}>
         <Carousel contentContainerStyles={styles.carouselImageContent}
-          buttonsLocation={CarouselButtonsLocation.top}
-          buttonsDisplay={CarouselButtonsDisplay.block}
-          //isInfinite={true}
+          buttonsLocation={CarouselButtonsLocation.center}
+          buttonsDisplay={CarouselButtonsDisplay.buttonsOnly}
+          isInfinite={true}
+          prevButtonStyles={styles.preslide}
+          nextButtonStyles={styles.nextslide}
+          pauseOnHover={true}
+          interval={45000}
           element={this.state.carouselElements}
           onMoveNextClicked={(index: number) => { console.log(`Next button clicked: ${index}`); }}
           onMovePrevClicked={(index: number) => { console.log(`Prev button clicked: ${index}`); }}

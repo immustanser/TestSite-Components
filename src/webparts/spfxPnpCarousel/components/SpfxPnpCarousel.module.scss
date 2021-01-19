@@ -1,15 +1,23 @@
 @import '~office-ui-fabric-react/dist/sass/References.scss';
 
-:global {
-  #workbenchPageContent,
-  .CanvasComponent.LCS .CanvasZone {
-    max-width: 100% !important;
-  }
+// :global {
+//   #workbenchPageContent,
+//   .CanvasComponent.LCS .CanvasZone {
+//     max-width: 100% !important;
+//   }
 
-}
+// }
 
 .carouselImageContent {
   height: 550px;
+}
+
+.preslide{
+  color: #ffffff6b;
+}
+
+.nextslide{
+  color: #ffffff6b;
 }
 
 
@@ -100,13 +108,13 @@
     overflow: 'hidden'; 
     text-align: 'left';
     position: 'absolute';
-    background-color:rgba(0, 0, 0, 0.69);
+    background-color:rgba(0, 0, 0, 0.48);
     margin-top: 110px;
     width: 100%;
     font-size: 18px;
     font-weight: 300;
     color: #fff;
-    padding: 20px 30px;
+    padding: 20px 50px;
 
     h2{
       font-size: 40px;
