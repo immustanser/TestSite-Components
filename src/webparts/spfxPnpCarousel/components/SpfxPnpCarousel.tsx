@@ -237,7 +237,7 @@ export default class SpfxPnpCarousel extends React.Component<ISpfxPnpCarouselPro
           prevButtonStyles={styles.preslide}
           nextButtonStyles={styles.nextslide}
           pauseOnHover={true}
-          interval={45000}
+          interval={3000}
           element={this.state.carouselElements}
           onMoveNextClicked={(index: number) => { console.log(`Next button clicked: ${index}`); }}
           onMovePrevClicked={(index: number) => { console.log(`Prev button clicked: ${index}`); }}
